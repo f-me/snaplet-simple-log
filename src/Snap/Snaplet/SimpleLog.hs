@@ -6,7 +6,7 @@ module Snap.Snaplet.SimpleLog (
   SimpleLog(..),
   simpleLogInit, simpleLogInit_,
   
-  module System.Log
+  module System.Log.Simple
   ) where
 
 import Control.Monad
@@ -15,7 +15,7 @@ import Control.Monad.IO.Class
 import Data.Lens.Template
 import Snap.Core
 import Snap.Snaplet
-import System.Log
+import System.Log.Simple
 
 data SimpleLog = SimpleLog {
   simpleLog :: Log }
